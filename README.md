@@ -1,16 +1,73 @@
-# todoblocapp
 
-A new Flutter project.
+# Todo_App
 
-## Getting Started
+## Описание
 
-This project is a starting point for a Flutter application.
+**Todo_App** — это мобильное приложение для создания и управления заметками. Оно позволяет пользователям добавлять, удалять и обновлять заметки. Приложение разработано с использованием Flutter и следуя принципам чистой архитектуры (Clean Architecture). 
 
-A few resources to get you started if this is your first Flutter project:
+## Технологии
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- **Flutter**: Основной фреймворк для создания пользовательского интерфейса.
+- **Bloc**: Используется для управления состоянием приложения.
+- **Isar**: Локальная база данных для хранения заметок.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Основные функции
+
+- **Создание заметок**: Пользователи могут создавать новые заметки.
+- **Удаление заметок**: Встроенная возможность удаления существующих заметок.
+- **Обновление заметок**: Пользователи могут редактировать и обновлять свои заметки.
+
+## Архитектура
+
+Приложение разработано с использованием Clean Architecture, что обеспечивает модульность и легкость тестирования. Основные слои:
+
+1. **Data Layer**:
+   - Репозитории и модели данных.
+   - Работа с базой данных Isar.
+
+2. **Domain Layer**:
+   - Сущности (Entities) и бизнес-логика.
+   - Использование (UseCases) для выполнения операций с данными.
+
+3. **Presentation Layer**:
+   - UI компоненты и экраны.
+   - Bloc и Cubit для управления состоянием пользовательского интерфейса.
+
+## Установка и запуск
+
+1. **Склонируйте репозиторий**:
+
+    ```bash
+    git clone https://github.com/your_username/Todo_App.git
+    ```
+
+2. **Перейдите в каталог проекта**:
+
+    ```bash
+    cd Todo_App
+    ```
+
+3. **Установите зависимости**:
+
+    ```bash
+    flutter pub get
+    ```
+
+4. **Запустите приложение**:
+
+    ```bash
+    flutter run
+    ```
+
+## Скриншоты
+
+*(Добавьте здесь несколько скриншотов вашего приложения)*
+
+## Контрибуция
+
+Если вы хотите внести свой вклад, пожалуйста, создайте pull request или откройте issue для обсуждения.
+
+## Лицензия
+
+Этот проект распространяется под лицензией MIT. Для получения дополнительной информации, смотрите файл [LICENSE](LICENSE).
+
