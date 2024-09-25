@@ -38,7 +38,7 @@
 1. **Склонируйте репозиторий**:
 
     ```bash
-    git clone https://github.com/your_username/Todo_App.git
+    https://github.com/idar1o/Todo_App_Flutter
     ```
 
 2. **Перейдите в каталог проекта**:
